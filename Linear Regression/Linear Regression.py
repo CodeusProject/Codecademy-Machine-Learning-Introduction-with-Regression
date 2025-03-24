@@ -58,5 +58,14 @@ print(total_loss1)
 print(total_loss2)
 better_fit = 2
 
-#4/14: Minimizing Loss
+#4/13: Minimizing Loss
 
+#5/13: Gradient Descent for Intercept
+def get_gradient_at_b(x, y, m, b):
+  diff = 0
+  for i in range(0, len(x)):
+    y_value = y[i]
+    x_value = x[i]
+    diff += (y_value - ((m * x_value) + b))
+  b_gradient = (-2/len(x))*diff
+  return b_gradient
