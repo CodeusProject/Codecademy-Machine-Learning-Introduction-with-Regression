@@ -57,3 +57,6 @@ for i in range(len(y)):
 print(total_loss1)
 print(total_loss2)
 better_fit = 2
+
+#4/14: Minimizing Loss
+
