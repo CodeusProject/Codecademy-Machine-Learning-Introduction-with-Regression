@@ -130,3 +130,17 @@ m = 0
 # Call your function here to update b and m
 b, m = step_gradient(months, revenue, b, m)
 print(b, m)
+
+#8/13: Convergence
+import codecademylib3_seaborn
+import matplotlib.pyplot as plt
+from data import bs, bs_000000001, bs_01
+
+iterations = range(1400)
+
+plt.plot(iterations, bs)
+plt.xlabel("Iterations")
+plt.ylabel("b value")
+plt.show()
+num_iterations = 800
+convergence_b = 48
