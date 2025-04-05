@@ -19,14 +19,16 @@ regr = linear_model.LinearRegression()
 regr.fit(X, y)
 print(regr.coef_[0], regr.intercept_)
 
-y_predict = []
 y_predict = regr.predict(X)
 plt.plot(X, y_predict)
 plt.show()
 
 X_future = np.array(range(2013, 2050))
+if isinstance(X_future, np.ndarray):
+    X_future = X_future.reshape(-1, 1)
+else:
+    print("X_future is not a valid numpy array")
 X_future = X_future.reshape(-1, 1)
-future_predict = []
 future_predict = regr.predict(X_future)
 
 plt.plot(X_future, future_predict)
