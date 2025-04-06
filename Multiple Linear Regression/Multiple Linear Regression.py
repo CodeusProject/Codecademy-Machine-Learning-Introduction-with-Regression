@@ -47,3 +47,9 @@ ax.w_zaxis.set_ticklabels([])
 
 # Add the code below:
 plt.show()
+
+#2/10: StreetEasy Dataset
+import codecademylib3_seaborn
+import pandas as pd
+df = pd.read_csv("https://raw.githubusercontent.com/Codecademy/datasets/master/streeteasy/manhattan.csv")
+print(df.head())
