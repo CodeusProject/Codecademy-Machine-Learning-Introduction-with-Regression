@@ -287,3 +287,6 @@ plt.ylabel("Predicted prices: $\hat{Y}_i$")
 plt.title("Actual Rent vs Predicted Rent")
 
 plt.show()
+
+#10/10: Review
+#https://www.codecademy.com/courses/machine-learning-introduction-with-regression/lessons/multiple-linear-regression-streeteasy/exercises/review
